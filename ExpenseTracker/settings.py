@@ -27,8 +27,17 @@ SECRET_KEY = '4--(d0^o%3vqt#-c(hf+8)a$95z8gbo57xol5pft!%xpve9_zd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# settings.py
 
-ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    "https://community-expense-tracker.onrender.com"
+]
+
+ALLOWED_HOSTS = [
+    "community-expense-tracker.onrender.com"
+]
+
+#ALLOWED_HOSTS = ['*']
 
 
 # Application definition
